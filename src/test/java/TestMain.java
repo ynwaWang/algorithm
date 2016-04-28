@@ -1,3 +1,4 @@
+import edu.princeton.cs.algs4.StdOut;
 import org.junit.Test;
 
 /**
@@ -7,5 +8,6 @@ public class TestMain {
     @Test
     public void welcome() {
         new Welcome();
+        StdOut.print("fuck U");
     }
 }
