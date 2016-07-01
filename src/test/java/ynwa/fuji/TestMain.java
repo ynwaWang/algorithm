@@ -1,3 +1,5 @@
+package ynwa.fuji;
+
 import edu.princeton.cs.algs4.StdOut;
 import org.junit.Test;
 import ynwa.fuji.Welcome;

@@ -1,7 +1,6 @@
 package ynwa.fuji;
 
-import java.util.Arrays;
-
+import static ynwa.fuji.Utils.*;
 /**
  * Created by ynwa on 16/7/1.
  */
@@ -28,12 +27,6 @@ public class HeapGo {
             maxHeapify(a,top);
         }
 
-    }
-
-    public static void exchange(int a[],int i,int j) {
-        a[i] = a[i] ^ a[j];
-        a[j] = a[i] ^ a[j];
-        a[i] = a[i] ^ a[j];
     }
 
     public int left(int root) {
