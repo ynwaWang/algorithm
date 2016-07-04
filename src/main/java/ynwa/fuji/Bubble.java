@@ -1,6 +1,6 @@
 package ynwa.fuji;
 
-import static ynwa.fuji.Utils.*;
+import static ynwa.fuji.util.Utils.*;
 /**
  * Created by David Wang<wdw@winbaoxian.com> on 2016-07-02.
  */

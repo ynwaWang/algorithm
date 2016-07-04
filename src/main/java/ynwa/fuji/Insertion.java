@@ -1,14 +1,7 @@
 package ynwa.fuji;
 
 
-import org.apache.commons.lang.ArrayUtils;
-import org.apache.commons.lang.StringUtils;
-
-import java.util.Arrays;
-import java.util.Collections;
-import java.util.List;
-
-import static ynwa.fuji.Utils.*;
+import static ynwa.fuji.util.Utils.*;
 /**
  * Created by ynwa on 16/7/1.
  */
