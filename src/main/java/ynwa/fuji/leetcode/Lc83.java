@@ -6,15 +6,6 @@ package ynwa.fuji.leetcode;
  */
 public class Lc83 {
 
-    public static class ListNode {
-        int val;
-        ListNode next;
-
-        ListNode(int x) {
-            val = x;
-        }
-    }
-
     public static ListNode deleteDuplicates(ListNode head) {
         if (head == null) {
             return head;
@@ -33,7 +24,7 @@ public class Lc83 {
     }
 
     public static void main(String[] args) {
-        int[] a = {1,2,2};
+        int[] a = {1, 2, 2};
         ListNode head = new ListNode(a[0]);
         ListNode cursor = head;
         for (int i = 1; i < a.length; i++) {
@@ -42,5 +33,14 @@ public class Lc83 {
         }
 
         deleteDuplicates(head);
+    }
+
+    public static class ListNode {
+        int val;
+        ListNode next;
+
+        ListNode(int x) {
+            val = x;
+        }
     }
 }

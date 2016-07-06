@@ -1,11 +1,28 @@
 package ynwa.fuji;
 
+import java.util.PriorityQueue;
+
 /**
  * Created by David Wang<wdw@winbaoxian.com> on 2016-07-04.
  */
 public class HeapSort {
     private static int[] sort = new int[]{1,0,10,20,3,5,6,4,9,8,12,17,34,11};
     public static void main(String[] args) {
+        apiTest();
+    }
+
+    private static void apiTest() {
+        int[] a = {0,1,2,4,3};
+        PriorityQueue<Integer> p = new PriorityQueue<>();
+        for (int i : a) {
+            p.offer(i);
+        }
+        while (!p.isEmpty()) {
+            System.err.println(p.poll());
+        }
+    }
+
+    private static void mainTest() {
         buildMaxHeapify(sort);
         heapSort(sort);
         print(sort);
