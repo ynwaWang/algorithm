@@ -1,8 +1,9 @@
-package ynwa.fuji.leetcode;
+package ynwa.fuji.leetcode.easy;
 
 /**
  * Created by David Wang<wdw@winbaoxian.com> on 2016-07-06.
  * https://leetcode.com/problems/remove-duplicates-from-sorted-list/
+ * Easy
  */
 public class Lc83 {
 

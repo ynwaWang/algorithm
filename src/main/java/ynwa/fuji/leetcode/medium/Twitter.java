@@ -1,10 +1,11 @@
-package ynwa.fuji.leetcode;
+package ynwa.fuji.leetcode.medium;
 
 import java.util.*;
 
 /**
  * Created by ynwa on 16/7/6.
  * https://leetcode.com/problems/design-twitter/
+ * Medium
  */
 
 public class Twitter {

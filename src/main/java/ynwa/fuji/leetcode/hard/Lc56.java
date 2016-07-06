@@ -1,4 +1,4 @@
-package ynwa.fuji.leetcode;
+package ynwa.fuji.leetcode.hard;
 
 import java.util.Collections;
 import java.util.Comparator;
@@ -8,6 +8,7 @@ import java.util.List;
 /**
  * Created by ynwa on 16/7/5.
  * https://leetcode.com/problems/merge-intervals/
+ * Hard
  */
 public class Lc56 {
     /**
