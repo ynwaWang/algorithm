@@ -137,25 +137,31 @@ public class Twitter {
         // 每次先执行一次poll,如果t.next != NULL则执行offer
         // 这样执行10次就能获得有序的10条tweet
         List<Integer> res = new LinkedList<>();
-        int min = Integer.MIN_VALUE;
-
-
-
-
-
-        do {
-            Tweet t = q.poll();
-            if (res.size() < RECENT_T_NUMBER) {
-                res.add(t.time);
-            } else {
-                for (int i = RECENT_T_NUMBER - 2; t.time > res.get(i) ; i--) {
-
-                }
-
+        Tweet t;
+        while(!q.isEmpty() && res.size() < RECENT_T_NUMBER) {
+            res.add((t = q.poll()).time);
+            if(t.next != null) {
+                q.add(t.next);
             }
+        }
 
-            if(res.size() >= RECENT_T_NUMBER) min = res.get(RECENT_T_NUMBER - 1);
-        } while (!q.isEmpty() || q.peek().time > min);
+
+
+
+//        int min = Integer.MIN_VALUE;
+//        do {
+//            Tweet t = q.poll();
+//            if (res.size() < RECENT_T_NUMBER) {
+//                res.add(t.time);
+//            } else {
+//                for (int i = RECENT_T_NUMBER - 2; t.time > res.get(i) ; i--) {
+//
+//                }
+//
+//            }
+//
+//            if(res.size() >= RECENT_T_NUMBER) min = res.get(RECENT_T_NUMBER - 1);
+//        } while (!q.isEmpty() || q.peek().time > min);
 
 
 //        int userCount = 0;
