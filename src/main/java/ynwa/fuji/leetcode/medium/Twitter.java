@@ -62,7 +62,7 @@ public class Twitter {
             followed = new HashSet<>();
             follow(id); // first follow itself
             tweet_head = null;
-            //TODO  tweeted a welcome tweet,so every user have a tweet even if he/she haven't tweet yet
+            //tweeted a welcome tweet,so every user have a tweet even if he/she haven't tweet yet
         }
 
         public void follow(int id) {
