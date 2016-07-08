@@ -9,7 +9,7 @@ public class MaxSubArray {
 
     public static int[] find(int[] a,int lo,int hi) {
         if (lo == hi) return new int[]{lo,hi,sum(a,lo,hi)};
-        int mid = (lo - hi) >> 1 + lo;
+        int mid = (hi - lo) >> 1 + lo;
         int[] left = find(a,lo,mid);
         int[] right = find(a,mid + 1,hi);
         int[] cross = findCross(a,lo,mid,hi);
