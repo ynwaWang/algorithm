@@ -70,7 +70,7 @@ public class Lc178 {
 //     | 499999 |    0 |
 //     | 499999 |    0 |
 //     | 499998 |    0 |
-//    TODO 发现个有趣的现象 http://stackoverflow.com/questions/38240629/why-rank-score-in-mysql-not-work-after-an-index-to-salary-of-table-salaries
+//    发现个有趣的现象 http://stackoverflow.com/questions/38240629/why-rank-score-in-mysql-not-work-after-an-index-to-salary-of-table-salaries
 /******************************************************************************
  mysql> select salary, (select count(distinct salary) from lc178 where salary >= s.salary) rank from lc178 s order by s.salary desc;
  +--------+------+
