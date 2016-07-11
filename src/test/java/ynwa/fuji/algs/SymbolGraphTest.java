@@ -1,4 +1,4 @@
-package ynwa.fuji;
+package ynwa.fuji.algs;
 
 import edu.princeton.cs.algs4.*;
 import org.junit.Test;
