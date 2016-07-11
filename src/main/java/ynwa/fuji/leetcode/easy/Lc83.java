@@ -1,5 +1,7 @@
 package ynwa.fuji.leetcode.easy;
 
+import ynwa.fuji.model.ListNode;
+
 /**
  * Created by David Wang<wdw@winbaoxian.com> on 2016-07-06.
  * https://leetcode.com/problems/remove-duplicates-from-sorted-list/
@@ -34,14 +36,5 @@ public class Lc83 {
         }
 
         deleteDuplicates(head);
-    }
-
-    public static class ListNode {
-        int val;
-        ListNode next;
-
-        ListNode(int x) {
-            val = x;
-        }
     }
 }
